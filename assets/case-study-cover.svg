@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Fuel Retail Digital Platform case study</title>
+  <desc id="desc">A dark technical cover showing customer, station, fleet and operations connected to one transaction spine.</desc>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="0" x2="1110" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07151F"/>
+      <stop offset="0.58" stop-color="#0C2430"/>
+      <stop offset="1" stop-color="#123345"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFC44D"/>
+      <stop offset="1" stop-color="#FF8A36"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4FE0C1"/>
+      <stop offset="1" stop-color="#42A5FF"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="630" rx="28" fill="url(#grid)"/>
+  <circle cx="1030" cy="120" r="170" fill="#38CDB1" fill-opacity="0.1" filter="url(#glow)"/>
+  <circle cx="920" cy="540" r="150" fill="#FF9C42" fill-opacity="0.1" filter="url(#glow)"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="70" y="62" width="290" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.15"/>
+    <circle cx="91" cy="81" r="6" fill="#4FE0C1"/>
+    <text x="108" y="87" font-size="15" font-weight="700" letter-spacing="1.8" fill="#CDE6EA">INDEPENDENT SYSTEM DESIGN</text>
+
+    <text x="70" y="183" font-size="66" font-weight="800" letter-spacing="-2.4" fill="#F6FBFC">Fuel Retail</text>
+    <text x="70" y="258" font-size="66" font-weight="800" letter-spacing="-2.4" fill="#F6FBFC">Digital Platform</text>
+    <rect x="72" y="287" width="105" height="7" rx="3.5" fill="url(#signal)"/>
+    <text x="70" y="342" font-size="25" font-weight="500" fill="#AFCBD1">One transaction spine for customer,</text>
+    <text x="70" y="378" font-size="25" font-weight="500" fill="#AFCBD1">station, fleet and operations.</text>
+
+    <g transform="translate(70 456)">
+      <rect width="183" height="70" rx="16" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="20" y="28" font-size="12" font-weight="700" letter-spacing="1.5" fill="#779BA5">CONTROL</text>
+      <text x="20" y="52" font-size="17" font-weight="700" fill="#F6FBFC">Rules before spend</text>
+    </g>
+    <g transform="translate(267 456)">
+      <rect width="183" height="70" rx="16" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="20" y="28" font-size="12" font-weight="700" letter-spacing="1.5" fill="#779BA5">EVIDENCE</text>
+      <text x="20" y="52" font-size="17" font-weight="700" fill="#F6FBFC">Every decision traced</text>
+    </g>
+
+    <g transform="translate(706 112)">
+      <circle cx="216" cy="202" r="168" fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.11"/>
+      <circle cx="216" cy="202" r="110" fill="#06131C" stroke="#4FE0C1" stroke-opacity="0.48" stroke-width="2"/>
+      <circle cx="216" cy="202" r="82" fill="url(#cool)" fill-opacity="0.12"/>
+      <text x="216" y="187" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#75EBD3">ONE SHARED</text>
+      <text x="216" y="217" text-anchor="middle" font-size="23" font-weight="800" fill="#FFFFFF">TRANSACTION</text>
+      <text x="216" y="245" text-anchor="middle" font-size="23" font-weight="800" fill="#FFFFFF">SPINE</text>
+
+      <path d="M216 92V54M326 202H365M216 312V350M106 202H68" stroke="#8CAAB1" stroke-width="2" stroke-dasharray="5 8"/>
+      <path d="M139 125L111 97M293 125L321 97M293 279L321 307M139 279L111 307" stroke="#8CAAB1" stroke-width="2" stroke-dasharray="5 8"/>
+
+      <g>
+        <rect x="153" y="0" width="126" height="54" rx="14" fill="#122E3A" stroke="#4FE0C1" stroke-opacity="0.42"/>
+        <text x="216" y="33" text-anchor="middle" font-size="14" font-weight="700" fill="#E9F7F6">CUSTOMER</text>
+      </g>
+      <g>
+        <rect x="365" y="175" width="126" height="54" rx="14" fill="#122E3A" stroke="#4FE0C1" stroke-opacity="0.42"/>
+        <text x="428" y="208" text-anchor="middle" font-size="14" font-weight="700" fill="#E9F7F6">STATION</text>
+      </g>
+      <g>
+        <rect x="153" y="350" width="126" height="54" rx="14" fill="#122E3A" stroke="#FFB94A" stroke-opacity="0.56"/>
+        <text x="216" y="383" text-anchor="middle" font-size="14" font-weight="700" fill="#FFF4DE">FLEET</text>
+      </g>
+      <g>
+        <rect x="-59" y="175" width="126" height="54" rx="14" fill="#122E3A" stroke="#FFB94A" stroke-opacity="0.56"/>
+        <text x="4" y="208" text-anchor="middle" font-size="14" font-weight="700" fill="#FFF4DE">OPERATIONS</text>
+      </g>
+
+      <circle cx="216" cy="91" r="5" fill="#4FE0C1"/>
+      <circle cx="327" cy="202" r="5" fill="#4FE0C1"/>
+      <circle cx="216" cy="313" r="5" fill="#FFB94A"/>
+      <circle cx="105" cy="202" r="5" fill="#FFB94A"/>
+    </g>
+
+    <text x="70" y="586" font-size="15" font-weight="600" fill="#7E9CA5">CASE STUDY  /  2026</text>
+    <text x="1130" y="586" text-anchor="end" font-size="15" font-weight="600" fill="#7E9CA5">FREEMAN PAUL IPUMBU</text>
+  </g>
+</svg>

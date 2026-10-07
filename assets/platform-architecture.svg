@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Fuel retail platform architecture</title>
+  <desc id="desc">Four user experiences connect through a shared orchestration layer to core services, persistent records and external provider adapters.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1050" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07151F"/>
+      <stop offset="1" stop-color="#102F3D"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFC44D"/>
+      <stop offset="1" stop-color="#FF8A36"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4FE0C1"/>
+      <stop offset="1" stop-color="#42A5FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L8 4L0 8Z" fill="#7AA1AA"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1050" rx="30" fill="url(#bg)"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="70" y="72" font-size="15" font-weight="800" letter-spacing="2" fill="#4FE0C1">PLATFORM ARCHITECTURE</text>
+    <text x="70" y="119" font-size="39" font-weight="850" letter-spacing="-1" fill="#F5FAFB">A shared core. Clear responsibilities at every edge.</text>
+
+    <text x="70" y="179" font-size="13" font-weight="800" letter-spacing="1.5" fill="#779BA5">EXPERIENCES</text>
+    <g transform="translate(70 198)" filter="url(#shadow)">
+      <rect width="330" height="104" rx="18" fill="#F5FAF9"/>
+      <circle cx="48" cy="52" r="23" fill="#DDF7F1"/>
+      <circle cx="48" cy="45" r="8" fill="#238C75"/>
+      <path d="M35 67C37 56 59 56 61 67" fill="#238C75"/>
+      <text x="84" y="45" font-size="18" font-weight="850" fill="#15323E">Customer app</text>
+      <text x="84" y="70" font-size="13" fill="#607982">Review, approve, receipt</text>
+    </g>
+    <g transform="translate(440 198)" filter="url(#shadow)">
+      <rect width="330" height="104" rx="18" fill="#F5FAF9"/>
+      <circle cx="48" cy="52" r="23" fill="#FFF0D7"/>
+      <path d="M35 60V43H61V60M40 43V35H56V43" fill="none" stroke="#B46618" stroke-width="3" stroke-linejoin="round"/>
+      <text x="84" y="45" font-size="18" font-weight="850" fill="#15323E">Station console</text>
+      <text x="84" y="70" font-size="13" fill="#607982">Basket, request, final status</text>
+    </g>
+    <g transform="translate(810 198)" filter="url(#shadow)">
+      <rect width="330" height="104" rx="18" fill="#F5FAF9"/>
+      <circle cx="48" cy="52" r="23" fill="#E3F1FF"/>
+      <path d="M33 57H63L58 43H38L33 57ZM38 57V64M58 57V64" fill="none" stroke="#337FBD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="84" y="45" font-size="18" font-weight="850" fill="#15323E">Fleet console</text>
+      <text x="84" y="70" font-size="13" fill="#607982">Rules, drivers, reports</text>
+    </g>
+    <g transform="translate(1180 198)" filter="url(#shadow)">
+      <rect width="350" height="104" rx="18" fill="#F5FAF9"/>
+      <circle cx="48" cy="52" r="23" fill="#EEE9FF"/>
+      <path d="M35 60L44 50L51 55L63 40" fill="none" stroke="#715DC1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="84" y="45" font-size="18" font-weight="850" fill="#15323E">Operations console</text>
+      <text x="84" y="70" font-size="13" fill="#607982">Health, exceptions, evidence</text>
+    </g>
+
+    <path d="M235 302V352M605 302V352M975 302V352M1355 302V352" stroke="#7AA1AA" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <g transform="translate(70 367)">
+      <rect width="1460" height="94" rx="22" fill="#102A37" stroke="#4FE0C1" stroke-opacity="0.45" stroke-width="2"/>
+      <rect x="18" y="18" width="196" height="58" rx="15" fill="url(#cool)"/>
+      <text x="116" y="43" text-anchor="middle" font-size="12" font-weight="800" letter-spacing="1.2" fill="#092029">SHARED ENTRY</text>
+      <text x="116" y="63" text-anchor="middle" font-size="15" font-weight="850" fill="#092029">API and web layer</text>
+      <text x="252" y="43" font-size="14" font-weight="800" fill="#F5FAFB">Identity verified once</text>
+      <text x="252" y="67" font-size="13" fill="#95B4BB">Every request is authorized again on the server</text>
+      <text x="780" y="43" font-size="14" font-weight="800" fill="#F5FAFB">Idempotent commands</text>
+      <text x="780" y="67" font-size="13" fill="#95B4BB">Safe retries without duplicate financial action</text>
+      <text x="1206" y="43" font-size="14" font-weight="800" fill="#F5FAFB">No private cache</text>
+      <text x="1206" y="67" font-size="13" fill="#95B4BB">Only the static application shell is cached</text>
+    </g>
+
+    <path d="M800 461V505" stroke="#7AA1AA" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="70" y="514" font-size="13" font-weight="800" letter-spacing="1.5" fill="#779BA5">CORE SERVICES</text>
+
+    <g transform="translate(70 535)">
+      <rect width="230" height="132" rx="18" fill="#173746" stroke="#315968"/>
+      <circle cx="27" cy="29" r="7" fill="#4FE0C1"/>
+      <text x="46" y="35" font-size="16" font-weight="850" fill="#F5FAFB">Identity</text>
+      <text x="20" y="72" font-size="13" fill="#A4C0C6">Roles, assigned resources,</text>
+      <text x="20" y="94" font-size="13" fill="#A4C0C6">least privilege and actor</text>
+      <text x="20" y="116" font-size="13" fill="#A4C0C6">context</text>
+    </g>
+    <g transform="translate(316 535)">
+      <rect width="230" height="132" rx="18" fill="#173746" stroke="#315968"/>
+      <circle cx="27" cy="29" r="7" fill="#FFC44D"/>
+      <text x="46" y="35" font-size="16" font-weight="850" fill="#F5FAFB">Orchestration</text>
+      <text x="20" y="72" font-size="13" fill="#A4C0C6">Payment lifecycle, station</text>
+      <text x="20" y="94" font-size="13" fill="#A4C0C6">outcome and monotonic</text>
+      <text x="20" y="116" font-size="13" fill="#A4C0C6">state changes</text>
+    </g>
+    <g transform="translate(562 535)">
+      <rect width="230" height="132" rx="18" fill="#173746" stroke="#315968"/>
+      <circle cx="27" cy="29" r="7" fill="#FF9A47"/>
+      <text x="46" y="35" font-size="16" font-weight="850" fill="#F5FAFB">Product rules</text>
+      <text x="20" y="72" font-size="13" fill="#A4C0C6">Line classification, eligible</text>
+      <text x="20" y="94" font-size="13" fill="#A4C0C6">value and versioned</text>
+      <text x="20" y="116" font-size="13" fill="#A4C0C6">decisions</text>
+    </g>
+    <g transform="translate(808 535)">
+      <rect width="230" height="132" rx="18" fill="#173746" stroke="#315968"/>
+      <circle cx="27" cy="29" r="7" fill="#42A5FF"/>
+      <text x="46" y="35" font-size="16" font-weight="850" fill="#F5FAFB">Fleet policy</text>
+      <text x="20" y="72" font-size="13" fill="#A4C0C6">Vehicle, driver, amount,</text>
+      <text x="20" y="94" font-size="13" fill="#A4C0C6">category, time and site</text>
+      <text x="20" y="116" font-size="13" fill="#A4C0C6">conditions</text>
+    </g>
+    <g transform="translate(1054 535)">
+      <rect width="230" height="132" rx="18" fill="#173746" stroke="#315968"/>
+      <circle cx="27" cy="29" r="7" fill="#9B8CFF"/>
+      <text x="46" y="35" font-size="16" font-weight="850" fill="#F5FAFB">Ledger</text>
+      <text x="20" y="72" font-size="13" fill="#A4C0C6">Append-only entries,</text>
+      <text x="20" y="94" font-size="13" fill="#A4C0C6">settlement matching and</text>
+      <text x="20" y="116" font-size="13" fill="#A4C0C6">owned exceptions</text>
+    </g>
+    <g transform="translate(1300 535)">
+      <rect width="230" height="132" rx="18" fill="#173746" stroke="#315968"/>
+      <circle cx="27" cy="29" r="7" fill="#FF6F91"/>
+      <text x="46" y="35" font-size="16" font-weight="850" fill="#F5FAFB">Evidence</text>
+      <text x="20" y="72" font-size="13" fill="#A4C0C6">Actors, decisions, rule</text>
+      <text x="20" y="94" font-size="13" fill="#A4C0C6">versions and material</text>
+      <text x="20" y="116" font-size="13" fill="#A4C0C6">actions</text>
+    </g>
+
+    <path d="M185 667V724M431 667V724M677 667V724M923 667V724M1169 667V724M1415 667V724" stroke="#7AA1AA" stroke-width="1.6"/>
+    <path d="M185 703H1415" stroke="#7AA1AA" stroke-width="1.6"/>
+    <path d="M800 703V739" stroke="#7AA1AA" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <g transform="translate(70 753)">
+      <rect width="840" height="103" rx="20" fill="#F5FAF9"/>
+      <text x="24" y="33" font-size="12" font-weight="850" letter-spacing="1.4" fill="#738990">PERSISTENT RECORD</text>
+      <text x="24" y="68" font-size="17" font-weight="850" fill="#15323E">Accounts  •  Orders  •  Rules  •  Ledger  •  Reconciliation  •  Events</text>
+      <text x="24" y="90" font-size="12" fill="#607982">Integer minor units, versioned decisions and append-only history</text>
+    </g>
+    <g transform="translate(940 753)">
+      <rect width="590" height="103" rx="20" fill="#F5FAF9"/>
+      <text x="24" y="33" font-size="12" font-weight="850" letter-spacing="1.4" fill="#738990">REPLACEABLE ADAPTERS</text>
+      <text x="24" y="68" font-size="17" font-weight="850" fill="#15323E">Point of sale  •  Payment  •  Identity  •  Messaging</text>
+      <text x="24" y="90" font-size="12" fill="#607982">Provider-specific behaviour stops at this boundary</text>
+    </g>
+
+    <path d="M800 856V903" stroke="#7AA1AA" stroke-width="2" marker-end="url(#arrow)"/>
+    <g transform="translate(70 919)">
+      <rect width="1460" height="70" rx="18" fill="#102A37" stroke="#FFB64A" stroke-opacity="0.45"/>
+      <text x="24" y="29" font-size="12" font-weight="850" letter-spacing="1.5" fill="#FFBF57">PRODUCTION BOUNDARY</text>
+      <text x="24" y="52" font-size="14" font-weight="700" fill="#F5FAFB">Approved providers, verified master data, legal confirmation, independent testing and operational acceptance</text>
+      <rect x="1260" y="17" width="174" height="36" rx="18" fill="url(#warm)"/>
+      <text x="1347" y="40" text-anchor="middle" font-size="12" font-weight="900" letter-spacing="1" fill="#17242B">GATE REQUIRED</text>
+    </g>
+  </g>
+</svg>
