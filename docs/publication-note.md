@@ -6,7 +6,7 @@ The diagrams and interface illustrations were created specifically for this vers
 
 Operational details have been generalized where they could identify an organization, supplier or private environment. No live account data, private address, internal hostname, provider configuration, infrastructure identifier or unpublished commercial material belongs in this repository.
 
-The case study describes product and engineering reasoning. It does not imply affiliation, a client relationship, live deployment or approval by any retailer, provider or regulator.
+The case study describes product and engineering reasoning by SolarSpin Technologies. It does not imply affiliation, a client relationship, live deployment or approval by any retailer, provider or regulator.
 
 Before publishing a release:
 

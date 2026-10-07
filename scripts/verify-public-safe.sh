@@ -9,7 +9,6 @@ failure=0
 # itself without placing those identifiers in the public repository.
 client_mark="$(printf '\160\165\155\141')"
 source_org="$(printf '\164\160\164\163')"
-source_studio="$(printf '\163\157\154\141\162\163\160\151\156')"
 private_host="$(printf '\160\165\155\141\055\156\141\155\151\142\151\141\055\144\151\147\151\164\141\154\056\160\141\147\145\163\056\144\145\166')"
 restricted_noun_one="$(printf '\164\157\153\145\156')"
 restricted_noun_two="$(printf '\143\162\145\144\145\156\164\151\141\154')"
@@ -33,7 +32,6 @@ scan_pattern() {
 
 scan_pattern "private client identifier found" "$client_mark"
 scan_pattern "private organization identifier found" "$source_org"
-scan_pattern "private studio identifier found" "$source_studio"
 scan_pattern "private deployment address found" "$private_host"
 scan_pattern "email address found" '[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}'
 scan_pattern "UUID-like infrastructure value found" '[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}'

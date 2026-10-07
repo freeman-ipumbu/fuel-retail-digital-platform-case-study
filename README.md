@@ -140,8 +140,10 @@ Run the release check with:
 ./scripts/verify-public-safe.sh
 ```
 
-## Author
+## Built by SolarSpin Technologies
 
-Designed and documented by [Freeman Paul Ipumbu](https://freeman-ipumbu.pages.dev/).
+This public case study was designed and documented by **SolarSpin Technologies**, led by [Freeman Paul Ipumbu](https://freeman-ipumbu.pages.dev/).
+
+SolarSpin keeps the commercial prospect anonymous here. The case study shows the system thinking without exposing private product source, protected infrastructure or the identity of the organisation involved.
 
 The repository uses the terms in [LICENSE](LICENSE).
